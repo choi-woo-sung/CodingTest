@@ -6,6 +6,10 @@ plugins {
 }
 
 android {
+    buildFeatures {
+        dataBinding = true
+    }
+
     namespace 'com.example.jobplanettest'
     compileSdk 32
 
