@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface JobPlanetAPI {
 
     @GET("/test_data_recruit_items.json")
-    suspend fun fetchRecruitItems(): Response<Recruit>
+    suspend fun fetchRecruitItems(): Recruit
 }
