@@ -1,6 +1,5 @@
 package com.example.studymatchingapp.util.network
 
-
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,8 +19,8 @@ object NetworkModule {
     fun provideOkHttpClient(): OkHttpClient {
         return OkHttpClient.Builder()
             .addInterceptor(HttpRequestInterceptor())
-            .connectTimeout(3 , TimeUnit.SECONDS )
-            .callTimeout(3 , TimeUnit.SECONDS)
+            .connectTimeout(3, TimeUnit.SECONDS)
+            .callTimeout(3, TimeUnit.SECONDS)
             .build()
     }
 
@@ -30,9 +29,8 @@ object NetworkModule {
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .client(okHttpClient)
-            .baseUrl("암거나 넣어용 뿅뿅")
+            .baseUrl("https://jpassets.jobplanet.co.kr/mobile-config")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-
 }
