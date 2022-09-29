@@ -1,4 +1,4 @@
-package com.dev6.data.network
+package com.example.jobplanettest.network
 
 import okhttp3.mockwebserver.MockWebServer
 
