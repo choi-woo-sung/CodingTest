@@ -7,7 +7,7 @@ import com.example.jobplanettest.repository.RecruitRepository
 
 class FakeRecruitRepository : RecruitRepository {
 
-    override suspend fun fetchProfileImage(): Recruit {
+    override suspend fun fetchRecruitInfo(): Recruit {
         val data: MutableList<RecruitItem> = mutableListOf()
         data.add(
             RecruitItem(

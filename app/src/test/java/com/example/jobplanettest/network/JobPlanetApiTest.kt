@@ -1,8 +1,6 @@
-package com.dev6.data.network
+package com.example.jobplanettest.network
 
 import MainCoroutinesRule
-import com.example.jobplanettest.network.ApiAbstract
-import com.example.jobplanettest.network.JobPlanetAPI
 import com.google.common.truth.Truth
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking

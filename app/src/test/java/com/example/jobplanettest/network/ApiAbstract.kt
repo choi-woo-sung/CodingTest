@@ -17,7 +17,6 @@
 package com.example.jobplanettest.network
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.dev6.data.network.Mockserver
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import okio.buffer
