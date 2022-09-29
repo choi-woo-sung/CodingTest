@@ -1,5 +1,7 @@
-package com.example.studymatchingapp.util.network
+package com.example.jobplanettest.di
 
+import com.example.jobplanettest.network.JobPlanetAPI
+import com.example.studymatchingapp.util.network.HttpRequestInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,8 +31,14 @@ object NetworkModule {
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .client(okHttpClient)
-            .baseUrl("https://jpassets.jobplanet.co.kr/mobile-config")
+            .baseUrl("https://jpassets.jobplanet.co.kr/mobile-config/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+    }
+
+    @Provides
+    @Singleton
+    fun provideJobPlanetService(retrofit: Retrofit): JobPlanetAPI {
+        return retrofit.create(JobPlanetAPI::class.java)
     }
 }
