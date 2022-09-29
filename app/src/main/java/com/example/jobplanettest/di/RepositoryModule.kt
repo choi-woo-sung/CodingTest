@@ -18,7 +18,7 @@ abstract class RepositoryModule {
     @ViewModelScoped
     abstract fun bindsRecruitRepository(repository: RecruitRepositoryImp): RecruitRepository
 
-//    @Binds
-//    @ViewModelScoped
-//    abstract fun bindsEnterpriseRepository(repository: EnterpriseRepositoryImp): EnterpriseRepository
+    @Binds
+    @ViewModelScoped
+    abstract fun bindsEnterpriseRepository(repository: EnterpriseRepositoryImp): EnterpriseRepository
 }

@@ -21,8 +21,8 @@ object NetworkModule {
     fun provideOkHttpClient(): OkHttpClient {
         return OkHttpClient.Builder()
             .addInterceptor(HttpRequestInterceptor())
-            .connectTimeout(3, TimeUnit.SECONDS)
-            .callTimeout(3, TimeUnit.SECONDS)
+            .connectTimeout(3000, TimeUnit.SECONDS)
+            .callTimeout(3000, TimeUnit.SECONDS)
             .build()
     }
 

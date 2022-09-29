@@ -1,6 +1,9 @@
 package com.example.jobplanettest.di
 
+import com.example.jobplanettest.repository.EnterpriseRepository
 import com.example.jobplanettest.repository.RecruitRepository
+import com.example.jobplanettest.usecase.GetEnterPriseListBaseUseCase
+import com.example.jobplanettest.usecase.GetEnterPriseListUseCase
 import com.example.jobplanettest.usecase.GetRecruitListBaseUseCase
 import com.example.jobplanettest.usecase.GetRecruitListUseCase
 import dagger.Module
@@ -15,5 +18,11 @@ object UseCaseModule {
 
     @Provides
     @ViewModelScoped
-    fun provideGetRecruitListUseCase(repository: RecruitRepository): GetRecruitListBaseUseCase = GetRecruitListUseCase(repository)
+    fun provideGetRecruitListUseCase(repository: RecruitRepository): GetRecruitListBaseUseCase =
+        GetRecruitListUseCase(repository)
+
+    @Provides
+    @ViewModelScoped
+    fun provideGetEnterPriseListUseCase(repository: EnterpriseRepository): GetEnterPriseListBaseUseCase =
+        GetEnterPriseListUseCase(repository)
 }

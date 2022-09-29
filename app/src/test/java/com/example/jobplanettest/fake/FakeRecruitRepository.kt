@@ -18,7 +18,7 @@ class FakeRecruitRepository : RecruitRepository {
                 imageURL = "",
                 company = Company(
                     name = "",
-                    logoPath = "",
+                    logo_path = "",
                     ratings = listOf()
                 )
             )
