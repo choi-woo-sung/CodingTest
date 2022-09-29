@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">JobPlanetTest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_recruit">채용</string>
+    <string name="text_enterprise">기업</string>
+
+    <string name="text_reward">보상금: %1$s원</string>
 </resources>
