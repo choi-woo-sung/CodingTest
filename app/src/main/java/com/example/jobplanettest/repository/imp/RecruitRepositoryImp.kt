@@ -9,7 +9,7 @@ import javax.inject.Inject
 class RecruitRepositoryImp @Inject constructor(private val api: JobPlanetAPI) :
     RecruitRepository {
 
-    override suspend fun fetchProfileImage() = HttpHandler<Recruit>()
+    override suspend fun fetchRecruitInfo() = HttpHandler<Recruit>()
         .httpRequest { api.fetchRecruitItems() }
         .sendRequest()
 }

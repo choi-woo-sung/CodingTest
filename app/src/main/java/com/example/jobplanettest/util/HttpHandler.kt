@@ -10,9 +10,9 @@ import com.example.jobplanettest.exception.TimeoutException
 import com.example.jobplanettest.exception.UnauthorizedException
 import com.example.jobplanettest.exception.UnknownException
 import retrofit2.HttpException
+import timber.log.Timber
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
-
 
 class HttpHandler<T> {
     private lateinit var httpRequest: suspend () -> T
@@ -67,6 +67,7 @@ class HttpHandler<T> {
     } catch (e: SocketTimeoutException) {
         throw TimeoutException()
     } catch (e: Throwable) {
+        Timber.tag("error").d(e.message)
         throw UnknownException()
     }
 }

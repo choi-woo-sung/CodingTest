@@ -1,3 +1,7 @@
 package com.example.jobplanettest.repository
 
-interface EnterpriseRepository
+import com.example.jobplanettest.model.Enterprise
+
+interface EnterpriseRepository {
+    suspend fun fetchEnterpriseInfo(): Enterprise
+}
