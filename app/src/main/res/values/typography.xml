@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="title20" parent="DefaultTextViewStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/gray_01</item>
+    </style>
 
-    <style name="title_16" parent="DefaultTextViewStyle">
+    <style name="title16" parent="DefaultTextViewStyle">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/gray_01</item>
     </style>
 
+    <style name="title14" parent="DefaultTextViewStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_01</item>
+    </style>
+
+    <style name="body15" parent="DefaultTextViewStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+
     <style name="body14" parent="DefaultTextViewStyle">
         <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_01</item>
     </style>
 
     <style name="body10" parent="DefaultTextViewStyle">
         <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/gray_01</item>
     </style>
 
 </resources>

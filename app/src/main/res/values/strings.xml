@@ -6,4 +6,10 @@
     <string name="text_enterprise">기업</string>
 
     <string name="text_reward">보상금: %1$s원</string>
+    <string name="text_salary">%1$s만원</string>
+    <string name="text_trending_announcements">인기 급상승 공고</string>
+    <string name="text_pro">장점</string>
+    <string name="text_cons">단점</string>
+    <string name="text_salary_avg">평균 연봉</string>
+    <string name="text_request">면접 질문</string>
 </resources>
