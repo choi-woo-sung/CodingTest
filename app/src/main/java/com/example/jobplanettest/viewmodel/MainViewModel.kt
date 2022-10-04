@@ -65,8 +65,9 @@ class MainViewModel @Inject constructor(
 
     fun searchEnterPrise(searchText: String) {
         _enterPriseFilterStateFlow.update {
-            Timber.tag("recruitItemList").d(enterPriseItemList.filter { it.name.contains(searchText) }.toString())
-            enterPriseItemList.filter { it.name.contains(searchText) }
+            Timber.tag("recruitItemList")
+                .d(enterPriseItemList.filter { it.name?.contains(searchText) ?: run { false } }.toString())
+            enterPriseItemList.filter { it.name?.contains(searchText) ?: run { false } }
         }
     }
 

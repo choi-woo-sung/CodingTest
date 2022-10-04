@@ -26,6 +26,7 @@
         <item name="chipBackgroundColor">@color/selector_green_white</item>
         <item name="chipCornerRadius">15dp</item>
         <item name="chipStrokeColor">@color/selector_gray03_null</item>
+        <item name="android:textColor">@color/selector_white_black</item>
     </style>
 
 
